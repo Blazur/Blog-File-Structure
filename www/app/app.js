@@ -18,4 +18,3 @@ angular.module('app', [
   $urlRouterProvider.otherwise('/tab/pets');
 
 });
-
