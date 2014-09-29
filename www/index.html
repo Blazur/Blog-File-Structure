@@ -18,31 +18,21 @@
     <script src="cordova.js"></script>
 
     <!-- your app's script -->
-    <script src="js/app.js"></script>
-    <script src="js/services.js"></script>
-    <script src="js/controllers.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/pets/pets.js"></script>
+    <script src="app/pets/details/details.js"></script>
+    <script src="app/adopt/adopt.js"></script>
+    <script src="app/about/about.js"></script>
+    <script src="services/pets.js"></script>
   </head>
 
-  <!-- 
-    'starter' is the name of this angular module (js/app.js)
-  -->
-  <body ng-app="starter" animation="slide-left-right-ios7">
+  <body ng-app="app" animation="slide-left-right-ios7">
 
-    <!-- 
-      The nav bar that will be updated as we navigate between views
-      Additional attributes set its look, ion-nav-bar animation and icons
-      Icons provided by Ionicons: http://ionicons.com/ 
-    -->
     <ion-nav-bar class="bar-positive">
       <ion-nav-back-button class="button-icon button-clear ion-ios7-arrow-back">
       </ion-nav-back-button>
     </ion-nav-bar>
 
-    <!-- 
-      The views will be rendered in the <ion-nav-view> directive below
-      Templates are in the /templates folder (but you could also
-      have templates inline in this html file if you'd like).
-    -->
     <ion-nav-view></ion-nav-view>
 
   </body>
