@@ -1,9 +1,9 @@
 angular.module('app', [
   'ionic',
+  'app.services',
   'app.pets',
   'app.adopt',
-  'app.about',
-  'app.services'
+  'app.about'
 ])
 
 .config(function($stateProvider, $urlRouterProvider) {
@@ -13,7 +13,7 @@ angular.module('app', [
     url: '/tab',
     abstract: true,
     templateUrl: 'app/app.html'
-  })
+  });
 
   $urlRouterProvider.otherwise('/tab/pets');
 
